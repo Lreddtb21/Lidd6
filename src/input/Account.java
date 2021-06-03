@@ -103,7 +103,7 @@ public class Account {
 					
 			}
 			} while(option != 'E');
-			System.out.println("Keep Up The Great Work!");
+			System.out.println("Keep It Up, You Are Great!");
 			}
 		
 			
