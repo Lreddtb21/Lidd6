@@ -51,12 +51,15 @@ public class Account {
 			char option = '\0';
 			Scanner scanner = new Scanner(System.in);
 			System.out.println("Welcome, " + customerName + "!");
+			System.out.println("Let's start your weight tracking journey!");
+			System.out.println("******************************************");
+
 			System.out.println();
-			System.out.println("A. Your Previous Weight");
+			System.out.println("A. Enter your starting weight");
 			//System.out.println("B. Add Weight");
-			System.out.println("C. Subtract Weight");
-			System.out.println("D. Show Previous Weigh In");
-			System.out.println("E. Finished");
+			System.out.println("B. Enter today's weight");
+			System.out.println("C. Finished");
+			//System.out.println("E. Finished");
 			
 			do  { 
 				System.out.println();
@@ -79,26 +82,26 @@ public class Account {
 				//System.out.println();
 				//break;
 				//case C subtract weight
-			case 'C':
+			case 'B':
 				System.out.println("Enter New Weight Subtracted: ");
 				float amount2 = scanner.nextFloat();
 				subtractWeight(amount2);
 				System.out.println();
 				break;
 				//case D view last weigh in
-			case 'D':
+			case 'C':
 				System.out.println("********************");
 				getLastWeighIn();
 				System.out.println("********************");
 				System.out.println();
 				break;
 				//case E exits program
-			case 'E':
-				System.out.println("********************");
-				break;
+			//case 'E':
+				//System.out.println("********************");
+				//break;
 				//invalid input
 				default:
-					System.out.println("Invalid. Please Enter Either A, B, C, D");
+					System.out.println("Invalid. Please Enter Either A, B, C");
 					break;
 					
 			}
@@ -108,5 +111,4 @@ public class Account {
 		
 			
 }
-
 
